@@ -1,0 +1,41 @@
+{
+	"storyName": "kingdom boiiiiz",
+	"difficulties": "mixed, kizz",
+	"hideFreeplay": false,
+	"weekBackground": "week2_ui",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "week1KYEE",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"Realm",
+			"skidpump",
+			[
+				255,
+				173,
+				13
+			]
+		],
+		[
+			"North",
+			"skidpump",
+			[
+				255,
+				173,
+				13
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Week 2 Kyee Mixed",
+	"hiddenUntilUnlocked": false
+}

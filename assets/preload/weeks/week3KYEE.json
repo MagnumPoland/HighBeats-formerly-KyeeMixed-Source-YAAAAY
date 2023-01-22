@@ -1,0 +1,41 @@
+{
+	"storyName": "kiedys zwykly bambik, dzisiaj skin ze sklepu, gramy w fortnite, nikt sie tu nie nudzi",
+	"difficulties": "Mixed, Kizz",
+	"hideFreeplay": false,
+	"weekBackground": "week3_ui",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "week2KYEE",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"Bico",
+			"kico",
+			[
+				255,
+				33,
+				0
+			]
+		],
+		[
+			"philly nice",
+			"kico",
+			[
+				255,
+				33,
+				0
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Week 3 Kyee Mixed",
+	"hiddenUntilUnlocked": false
+}

@@ -1,0 +1,50 @@
+{
+	"storyName": "Weeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+	"difficulties": "Mixed",
+	"hideFreeplay": false,
+	"weekBackground": "week_ui",
+	"weekBefore": "tutorialKYEE",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Obeepob",
+			"dadKYEE",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"Decomposed",
+			"dadKYEE",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"Final Night",
+			"dadKYEE",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Week 1 Kyee Mixed"
+}

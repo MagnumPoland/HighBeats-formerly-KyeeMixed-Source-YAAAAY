@@ -1,0 +1,32 @@
+{
+	"storyName": "Your Old Month",
+	"difficulties": "mixed",
+	"hideFreeplay": false,
+	"weekBackground": "tutorial_ui",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "week1",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"how to play",
+			"gf",
+			[
+				255,
+				33,
+				0
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Tutorial Kyee Mixed",
+	"hiddenUntilUnlocked": false
+}
