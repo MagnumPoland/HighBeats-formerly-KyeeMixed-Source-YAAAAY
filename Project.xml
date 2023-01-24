@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Kyee Mixed: Visual Update" file="KyeeMixed" packageName="com.shadowmario.psychengine" package="com.shadowmario.psychengine" main="Main" version="Alpha - Visual Update (Part 2)" company="KyeeMix" />
+	<app title="HighBeats_: Visual Update" file="HighBeats" packageName="com.shadowmario.psychengine" package="com.shadowmario.psychengine" main="Main" version="Alpha - Visual Update (Part 2)" company="KyeeMix" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
