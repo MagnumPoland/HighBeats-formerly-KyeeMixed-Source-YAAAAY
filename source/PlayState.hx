@@ -2896,10 +2896,10 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
-		if (FlxG.keys.justPressed.SEVEN)
+		/*if (FlxG.keys.justPressed.SEVEN)
 		{
-			LoadingState.loadAndSwitchState(new CheatingState());
-		}
+			LoadingState.loadAndSwitchState(new CheatingState()); //WŁĄCZ TO POTEM UŁOMIE
+		}*/
 		
 
 		/*switch (curSong)
@@ -3069,10 +3069,10 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		/*if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene)
+		if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene) //A TO POTEM WYŁĄCZ!
 		{
 			openChartEditor();
-		}*/
+		}
 
 		// FlxG.watch.addQuick('VOL', vocals.amplitudeLeft);
 		// FlxG.watch.addQuick('VOLRight', vocals.amplitudeRight);
