@@ -46,10 +46,10 @@ class FPS extends TextField
 		currentFPS = 0;
 		selectable = false;
 		mouseEnabled = false;
-		defaultTextFormat = new TextFormat("_sans", 14, color);
+		defaultTextFormat = new TextFormat("_vcr", 20, color);
 		autoSize = LEFT;
 		multiline = true;
-		text = "Frames Per Second: ";
+		text = "FPS: ";
 
 		cacheCount = 0;
 		currentTime = 0;
