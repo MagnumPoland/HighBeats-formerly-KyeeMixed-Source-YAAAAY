@@ -4745,7 +4745,7 @@ class PlayState extends MusicBeatState
 						boyfriend.heyTimer = 0.6;
 					}
 
-					if (FlxG.keys.justPressed.SHIFT)
+					if (FlxG.keys.justPressed.NINE)
 						{
 							boyfriend.playAnim('hey', true);
 						}
