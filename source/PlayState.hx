@@ -4745,6 +4745,11 @@ class PlayState extends MusicBeatState
 						boyfriend.heyTimer = 0.6;
 					}
 
+					if (FlxG.keys.justPressed.SHIFT)
+						{
+							boyfriend.playAnim('hey', true);
+						}
+
 					if(gf != null && gf.animOffsets.exists('cheer')) {
 						gf.playAnim('cheer', true);
 						gf.specialAnim = true;
