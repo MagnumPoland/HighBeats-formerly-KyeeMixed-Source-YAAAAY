@@ -1,5 +1,6 @@
 package;
 
+import Discord.DiscordClient;
 import flixel.graphics.FlxGraphic;
 #if desktop
 import Discord.DiscordClient;
@@ -60,6 +61,7 @@ import StageData;
 import FunkinLua;
 import DialogueBoxPsych;
 import Conductor.Rating;
+import flash.system.System;
 
 #if !flash 
 import flixel.addons.display.FlxRuntimeShader;
@@ -83,17 +85,19 @@ class PlayState extends MusicBeatState
 	public static var STRUM_X_MIDDLESCROLL = -278;
 
 	public static var ratingStuff:Array<Dynamic> = [
-		['You Suck!', 0.2], //From 0% to 19%
-		['Shit', 0.4], //From 20% to 39%
-		['Bad', 0.5], //From 40% to 49%
-		['Bruh', 0.6], //From 50% to 59%
-		['Meh', 0.69], //From 60% to 68%
-		['Nice', 0.7], //69%
-		['Good', 0.8], //From 70% to 79%
-		['Great', 0.9], //From 80% to 89%
-		['Sick!', 1], //From 90% to 99%
-		['Perfect!!', 1] //The value on this one isn't used actually, since Perfect is always "1"
+		['BRUH', 0.2], //From 0% to 19%
+		['ABCDEFGHIJKLMNOPRSTUWVXYZ', 0.4], //From 20% to 39%
+		['Why', 0.5], //From 40% to 49%
+		[':(((', 0.6], //From 50% to 59%
+		['Thats... good?', 0.69], //From 60% to 68%
+		['[BIG SHOT]', 0.7], //69%
+		['Pretty tight bars', 0.8], //From 70% to 79%
+		['Niiiiice :)', 0.9], //From 80% to 89%
+		['Wow :O', 1], //From 90% to 99%
+		['OSU!MANIA PLAYER ', 1] //The value on this one isn't used actually, since Perfect is always "1"
 	];
+
+	
 
 	//event variables
 	private var isCameraOnForcedPos:Bool = false;
@@ -1042,7 +1046,7 @@ class PlayState extends MusicBeatState
 		}
 		updateTime = showTime;
 
-		timeBarBG = new AttachedSprite('timeBar');
+		timeBarBG = new AttachedSprite('timeBar'); //a tu Czas Postęp
 		timeBarBG.x = timeTxt.x;
 		timeBarBG.y = timeTxt.y + (timeTxt.height / 4);
 		timeBarBG.scrollFactor.set();
@@ -1114,7 +1118,7 @@ class PlayState extends MusicBeatState
 		FlxG.fixedTimestep = false;
 		moveCameraSection();
 
-		healthBarBG = new AttachedSprite('healthBar');
+		healthBarBG = new AttachedSprite('healthBar'); //tutaj jest o Pasku Życia baybe 8)
 		healthBarBG.y = FlxG.height * 0.89;
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
@@ -1153,7 +1157,7 @@ class PlayState extends MusicBeatState
 		scoreTxt.visible = !ClientPrefs.hideHud;
 		add(scoreTxt);
 
-		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "BOTPLAY", 32);
+		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "hey you. i know youre hacking.", 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		botplayTxt.scrollFactor.set();
 		botplayTxt.borderSize = 1.25;
@@ -1333,6 +1337,24 @@ class PlayState extends MusicBeatState
 
 				case 'ugh' | 'guns' | 'stress':
 					tankIntro();
+				
+				case 'how-to-play':
+					startDialogue(dialogueJson);
+				
+				case 'obeepob':
+					startDialogue(dialogueJson);
+				
+				case 'decomposed':
+					startDialogue(dialogueJson);
+
+				case 'final-night':
+					startDialogue(dialogueJson);
+
+				case 'bico':
+					startDialogue(dialogueJson);
+
+				//case 'highpai':
+				//	startDialogue(dialogueJson);
 
 				default:
 					startCountdown();
@@ -1361,7 +1383,7 @@ class PlayState extends MusicBeatState
 	
 		#if desktop
 		// Updating Discord Rich Presence.
-		DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
+		DiscordClient.changePresence("NO LEAKS!", "I SAID NO LEAKS!");
 		#end
 
 		if(!ClientPrefs.controllerMode)
@@ -2870,15 +2892,23 @@ class PlayState extends MusicBeatState
 	var startedCountdown:Bool = false;
 	var canPause:Bool = true;
 	var limoSpeed:Float = 0;
+	//var nocheating:FlxSprite; 
 
 	override public function update(elapsed:Float)
 	{
-		/*if (FlxG.keys.justPressed.NINE)
+		/*if (FlxG.keys.justPressed.SEVEN)
 		{
-			iconP1.swapOldIcon();
+			LoadingState.loadAndSwitchState(new CheatingState()); //WŁĄCZ TO POTEM UŁOMIE
+		}*/
+		
+
+		/*switch (curSong)
+		{
+			case "bico":
+				DiscordClient.changePresence(detailsPausedText, " :B:ico" + " (" + storyDifficultyText + ")", iconP2.getCharacter());
 		}*/
 		callOnLuas('onUpdate', [elapsed]);
-
+		
 		switch (curStage)
 		{
 			case 'tank':
@@ -3040,7 +3070,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene)
+		if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene) //A TO POTEM WYŁĄCZ!
 		{
 			openChartEditor();
 		}
@@ -4715,6 +4745,11 @@ class PlayState extends MusicBeatState
 						boyfriend.specialAnim = true;
 						boyfriend.heyTimer = 0.6;
 					}
+
+					/*if (FlxG.keys.justPressed.NINE)
+						{
+							boyfriend.playAnim('hey', true);
+						}*/
 
 					if(gf != null && gf.animOffsets.exists('cheer')) {
 						gf.playAnim('cheer', true);
