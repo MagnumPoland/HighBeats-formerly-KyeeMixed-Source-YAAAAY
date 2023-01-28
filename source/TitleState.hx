@@ -114,6 +114,8 @@ class TitleState extends MusicBeatState
 		}
 		#end*/
 
+
+		//nwm po co to ale dobra
 		DiscordClient.changePresence("Loading game...", null);	
 
 		FlxG.game.focusLostFramerate = 60;
@@ -314,9 +316,11 @@ class TitleState extends MusicBeatState
 				gfDance.animation.addByIndices('danceLeft', 'BB Title Bump', [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], "", 24, false);
 				gfDance.animation.addByIndices('danceRight', 'BB Title Bump', [27, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], "", 24, false);
 			case 'SOMETHINGVERYOLD':
+				gfDance.frames = Paths.getSparrowAtlas('gfDanceTitle');
+				gfDance.animation.addByIndices('danceLeft', 'gfDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
 				logoBl.frames = Paths.getSparrowAtlas('kyeeOLDLOLSOBADXD');
-				logoBl.animation.addByPrefix('bump', 'logo bumpin', 24, false);
-				logoBl.animation.play('bump');
+				logoBl.animation.addByIndices('bump', 'logo bumpin', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
 			#end
 
 			default:

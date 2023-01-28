@@ -35,16 +35,17 @@ class MainMenuState extends MusicBeatState
 	private var camAchievement:FlxCamera;
 	
 	var optionShit:Array<String> = [
-		'story_mode', //1
-		'freeplay', //2
+		'story_mode', //0
+		'freeplay', //1
 		//#if MODS_ALLOWED 'mods', #end
 		//#if ACHIEVEMENTS_ALLOWED 'awards', #end
-		'credits', //3
+		'credits', //2
 		//#if !switch 'donate', #end
-		'options', //4
-		'discord', //temp 5
-		//'classic', //5
-		'ost' //6
+		'options', //3
+		'discord', //4
+		//'classic',
+		'ost', //5
+		'gallery' //6
 	];
 
 	var magenta:FlxSprite;
@@ -148,6 +149,9 @@ class MainMenuState extends MusicBeatState
 					menuItem.x = 1000;
 				case 5:
 					menuItem.y = 193.75;
+					menuItem.x = 1000;
+				case 6:
+					menuItem.y = 352.55;
 					menuItem.x = 1000;
 			}
 		}
@@ -286,6 +290,11 @@ class MainMenuState extends MusicBeatState
 									case 'ost':
 										CoolUtil.browserLoad('https://youtu.be/IpOGdWxv18s?t=476');
 										LoadingState.loadAndSwitchState(new MainMenuState());
+									case 'gallery':
+										PlayState.SONG = Song.loadFromJson('gallery', 'gallery');
+                           				PlayState.isStoryMode = false;
+                           				PlayState.storyDifficulty = 0;
+                           				LoadingState.loadAndSwitchState(new PlayState());
 									
 								}
 							});
