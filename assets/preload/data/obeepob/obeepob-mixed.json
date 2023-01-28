@@ -1,23 +1,23 @@
 {
 	"song": {
-		"player1": "bfKYEE",
+		"player1": "bfKYEEv4",
 		"events": [],
 		"gfVersion": "kyeeGFnew",
 		"notes": [
 			{
 				"sectionNotes": [
 					[
-						37.5,
+						0,
 						2,
 						0
 					],
 					[
-						487.5,
+						450,
 						1,
-						375
+						300
 					],
 					[
-						1237.5,
+						1200,
 						2,
 						0
 					]
@@ -28,17 +28,17 @@
 			{
 				"sectionNotes": [
 					[
-						2437.5,
+						2400,
 						2,
-						150
+						0
 					],
 					[
-						2887.5,
+						2850,
 						1,
-						450
+						300
 					],
 					[
-						3637.5,
+						3600,
 						2,
 						0
 					]
@@ -1079,6 +1079,26 @@
 				"mustHitSection": true,
 				"changeBPM": false,
 				"bpm": 100
+			},
+			{
+				"sectionBeats": 4,
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 100
+			},
+			{
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"altAnim": false,
+				"gfSection": false,
+				"bpm": 100,
+				"changeBPM": false,
+				"mustHitSection": true
 			},
 			{
 				"sectionBeats": 4,
