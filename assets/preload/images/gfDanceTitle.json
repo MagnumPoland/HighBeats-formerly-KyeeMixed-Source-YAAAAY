@@ -1,6 +1,8 @@
 {	
 	"titlex":650,
 	"titley":20,
+	"titleSECRETx":0,
+	"titleSECRETy":0,
 	"startx":100,
 	"starty":576,
 	"gfx":20,
