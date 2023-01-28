@@ -43,6 +43,8 @@ typedef TitleData =
 
 	titlex:Float,
 	titley:Float,
+	titleSECRETx:Float,
+	titleSECRETy:Float,
 	startx:Float,
 	starty:Float,
 	gfx:Float,
