@@ -82,7 +82,7 @@ class FPS extends TextField
 
 		if (currentCount != cacheCount /*&& visible*/)
 		{
-			text = "Frames Per Second: " + currentFPS;
+			text = "FPS: " + currentFPS;
 			var memoryMegas:Float = 0;
 			
 			#if openfl
