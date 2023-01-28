@@ -183,8 +183,8 @@ class TitleState extends MusicBeatState
 				titleJSON.gfx += 45;
 				titleJSON.gfy += 100;
 			case 'SOMETHINGVERYOLD':
-				titleJSON.titlex += 650;
-				titleJSON.titley += 20;
+				titleJSON.titleSECRETx += 0;
+				titleJSON.titleSECRETy += 0;
 		}
 		#end
 
