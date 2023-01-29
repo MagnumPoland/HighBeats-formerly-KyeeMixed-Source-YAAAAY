@@ -14,7 +14,7 @@
 		{
 			"offsets": [
 				-8,
-				6
+				8
 			],
 			"loop": false,
 			"fps": 24,
@@ -24,8 +24,8 @@
 		},
 		{
 			"offsets": [
-				-8,
-				-29
+				3,
+				-28
 			],
 			"loop": false,
 			"fps": 24,
@@ -91,7 +91,7 @@
 		{
 			"loop": false,
 			"offsets": [
-				-8,
+				2,
 				-28
 			],
 			"anim": "singDOWNmiss",
@@ -102,7 +102,7 @@
 		{
 			"loop": false,
 			"offsets": [
-				-31,
+				-33,
 				33
 			],
 			"anim": "singUPmiss",
@@ -123,7 +123,7 @@
 		}
 	],
 	"no_antialiasing": true,
-	"image": "characters/bfcarKYEE",
+	"image": "characters/BFCarhighmix_",
 	"position": [
 		0,
 		350
@@ -131,9 +131,9 @@
 	"healthicon": "bfKYEE2",
 	"flip_x": true,
 	"healthbar_colors": [
-		49,
-		176,
-		209
+		255,
+		0,
+		0
 	],
 	"camera_position": [
 		0,

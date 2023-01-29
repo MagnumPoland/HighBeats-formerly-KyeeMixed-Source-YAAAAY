@@ -8,8 +8,8 @@
 	--Example: CodeName1 = ''
 
 	CoderName1 = 'Magnum :)'
-	CoderName2 = ''
-	CoderName3 = ''
+	CoderName2 = 'methewhenmethes - modchart editor'
+	CoderName3 = 'its buggy but whatever'
 
 	ArtistName1 = 'Kizz_'
 	ArtistName2 = ''
@@ -19,7 +19,7 @@
 	MusicianName2 = ''
 	MusicianName3 = ''
 
-	CharterName1 = 'Both diff: Magnum :)'
+	CharterName1 = 'Magnum :)'
 	CharterName2 = 'Pf0r'
 	CharterName3 = '' 
 

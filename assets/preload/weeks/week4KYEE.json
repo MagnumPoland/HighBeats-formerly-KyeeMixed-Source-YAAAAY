@@ -1,10 +1,15 @@
 {
 	"storyName": "idk",
-	"difficulties": "Mixed, Kizz",
+	"difficulties": "Mixed",
 	"hideFreeplay": false,
 	"weekBackground": "limo",
 	"weekBefore": "week3KYEE",
 	"startUnlocked": true,
+	"weekCharacters": [
+		"mom",
+		"bf",
+		"gf"
+	],
 	"songs": [
 		[
 			"the panties",
@@ -35,10 +40,5 @@
 		]
 	],
 	"hideStoryMode": false,
-	"weekCharacters": [
-		"mom",
-		"bf",
-		"gf"
-	],
 	"weekName": "Week 4 Kyee Mixed"
 }
