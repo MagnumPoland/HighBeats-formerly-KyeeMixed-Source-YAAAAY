@@ -274,19 +274,22 @@ class TitleState extends MusicBeatState
 		Conductor.changeBPM(titleJSON.bpm);
 		persistentUpdate = true;
 
-		var coolAnimBG:FlxSprite = new FlxSprite();
+		/*var coolAnimBG:FlxSprite = new FlxSprite();
 
 		coolAnimBG = new FlxSprite(titleJSON.animBGx, titleJSON.animBGy);
 		coolAnimBG.frames = Paths.getSparrowAtlas('animBG');
 		coolAnimBG.antialiasing = ClientPrefs.globalAntialiasing;
 		coolAnimBG.animation.addByPrefix('WTH', 'animation', 13, false);
-		coolAnimBG.animation.play('WTH');
+		coolAnimBG.animation.play('WTH');*/
 
 
-		/*var bg:FlxSprite = new FlxSprite();
+		var bg:FlxSprite = new FlxSprite();
 
 		if (titleJSON.backgroundSprite != null && titleJSON.backgroundSprite.length > 0 && titleJSON.backgroundSprite != "none"){
 			bg.loadGraphic(Paths.image(titleJSON.backgroundSprite));
+			bg.frames = Paths.getSparrowAtlas(titleJSON.backgroundSprite);
+			bg.animation.addByPrefix('WTH', 'titleDROP animation', 13, false);
+			bg.animation.play('WTH');
 		}else{
 			bg.makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		}

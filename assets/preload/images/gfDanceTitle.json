@@ -9,6 +9,6 @@
 	"starty":576,
 	"gfx":20,
 	"gfy":40,
-	"backgroundSprite":"bgTitle",
+	"backgroundSprite":"animBG",
 	"bpm":102
 }
