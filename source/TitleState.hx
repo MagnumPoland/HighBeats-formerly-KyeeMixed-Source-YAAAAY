@@ -288,7 +288,7 @@ class TitleState extends MusicBeatState
 		if (titleJSON.backgroundSprite != null && titleJSON.backgroundSprite.length > 0 && titleJSON.backgroundSprite != "none"){
 			bg.loadGraphic(Paths.image(titleJSON.backgroundSprite));
 			bg.frames = Paths.getSparrowAtlas(titleJSON.backgroundSprite);
-			bg.animation.addByPrefix('WTH', 'titleDROP animation', 13, false);
+			bg.animation.addByPrefix('WTH', 'titleDROP animation', 13, true);
 			bg.animation.play('WTH');
 		}else{
 			bg.makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
