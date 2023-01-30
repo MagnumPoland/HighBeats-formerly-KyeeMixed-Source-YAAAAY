@@ -285,7 +285,8 @@ class TitleState extends MusicBeatState
 		add(bg);
 
 		backdrop = new FlxBackdrop(Paths.image('BackDropik')); //dodaj własny image zara
-		backdrop.velocity.set(0, 0);
+		backdrop.velocity.set(100, 100);
+		backdrop.alpha = 0.5;
 		add(backdrop);
 
 		logoBl = new FlxSprite(titleJSON.titlex, titleJSON.titley);
