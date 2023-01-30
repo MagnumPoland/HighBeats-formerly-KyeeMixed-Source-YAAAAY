@@ -46,6 +46,8 @@ typedef TitleData =
 	titley:Float,
 	titleSECRETx:Float,
 	titleSECRETy:Float,
+	animBGx:Float,
+	animBGy:Float,
 	startx:Float,
 	starty:Float,
 	gfx:Float,
@@ -236,7 +238,8 @@ class TitleState extends MusicBeatState
 	var danceLeft:Bool = false;
 	var titleText:FlxSprite;
 	var swagShader:ColorSwap = null;
-	var backdrop:FlxBackdrop;
+	//var backdrop:FlxBackdrop;
+	//var coolAnimBG:FlxSprite;
 
 	function startIntro()
 	{
@@ -271,7 +274,16 @@ class TitleState extends MusicBeatState
 		Conductor.changeBPM(titleJSON.bpm);
 		persistentUpdate = true;
 
-		var bg:FlxSprite = new FlxSprite();
+		var coolAnimBG:FlxSprite = new FlxSprite();
+
+		coolAnimBG = new FlxSprite(titleJSON.animBGx, titleJSON.animBGy);
+		coolAnimBG.frames = Paths.getSparrowAtlas('animBG');
+		coolAnimBG.antialiasing = ClientPrefs.globalAntialiasing;
+		coolAnimBG.animation.addByPrefix('WTH', 'animation', 13, false);
+		coolAnimBG.animation.play('WTH');
+
+
+		/*var bg:FlxSprite = new FlxSprite();
 
 		if (titleJSON.backgroundSprite != null && titleJSON.backgroundSprite.length > 0 && titleJSON.backgroundSprite != "none"){
 			bg.loadGraphic(Paths.image(titleJSON.backgroundSprite));
@@ -284,10 +296,16 @@ class TitleState extends MusicBeatState
 		// bg.updateHitbox();
 		add(bg);
 
-		backdrop = new FlxBackdrop(Paths.image('BackDropik')); //dodaj własny image zara
+		/*backdrop = new FlxBackdrop(Paths.image('BackDropik')); //dodaj własny image zara
 		backdrop.velocity.set(100, 100);
 		backdrop.alpha = 0.5;
-		add(backdrop);
+		add(backdrop);*/
+
+		/*coolAnimBG = new FlxSprite(titleJSON.animBGx, titleJSON.animBGy);
+		coolAnimBG.frames = Paths.getSparrowAtlas('animBG');
+		coolAnimBG.antialiasing = ClientPrefs.globalAntialiasing;
+		coolAnimBG.animation.addByPrefix('WTH', 'animation', 13, false);
+		coolAnimBG.animation.play('WTH');*/
 
 		logoBl = new FlxSprite(titleJSON.titlex, titleJSON.titley);
 		logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
