@@ -1,0 +1,5 @@
+made by me (I was helping myself 
+with one script from CamelliaALT mod)
+
+value 1 - cam zoom
+value 2 - duration

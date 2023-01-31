@@ -1,0 +1,7 @@
+on screen text, script by Catbrother Everything
+
+value 1 - text to show
+value 2 - color in Hex
+text size and other shit edit yourself in script :P
+
+pozdrooooooooooo

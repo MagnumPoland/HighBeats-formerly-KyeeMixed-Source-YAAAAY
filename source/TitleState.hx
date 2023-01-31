@@ -674,9 +674,9 @@ class TitleState extends MusicBeatState
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
 				case 2:
 					#if PSYCH_WATERMARKS
-					createCoolText(['FNF Kyee Mixed by'], 15);
+					createCoolText(['FNF HighBeats by'], 15);
 					#else
-					createCoolText(['High', 'Magnum', 'Pf0r', 'Haneef', 'And El1vat3']);
+					createCoolText(['High', 'Magnum', 'Pf0r', 'Haneef', 'El1vat3', 'and Ari']);
 					#end
 				// credTextShit.visible = true;
 				case 4:
