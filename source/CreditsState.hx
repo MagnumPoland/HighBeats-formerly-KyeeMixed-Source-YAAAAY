@@ -81,12 +81,14 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-			['Kyee Mixed Team!'],
-			['High',				'kizz',				'Director and cool artist 8)', 									'https://www.youtube.com/channel/UCxjlpXCbRrQXGgdajSFzzlw',										'444444'],
-			['Magnum',				'magnum',			'Coder and charter (hed like to solve the puzzle)',				'https://www.youtube.com/channel/UClVqZfknPUJPGaMkX-vb2lA',										'444444'],
-			['Pf0r',				'pfor',				'Musician for week 2 and 4 and chart fixer (old sport)',		'https://www.youtube.com/channel/UCvX1EabtbJ1zPpb7sC5LAMQ',										'444444'],
-			['Haneefs Cre8tions',	'haneef',			'Musician for week 1 (have a good day)',						'https://www.youtube.com/channel/UC387XUAmqpdWOGq0a6VTWUA',										'444444'],
-			['EL1VAT3',				'elivate',			'Pixel Artist (he speaks polish tho O_O)',						'',										'444444'],
+			['HighBeats_ Team!'],
+			['High',				'emptyboi',			'Director and cool artist 8)', 									'https://www.youtube.com/channel/UCxjlpXCbRrQXGgdajSFzzlw',										'444444'],
+			['Magnum',				'emptyboi',			'Coder and charter (he sucks at coding :skull:)',				'https://www.youtube.com/channel/UClVqZfknPUJPGaMkX-vb2lA',										'444444'],
+			['Pf0r',				'emptyboi',			'Musician for week 2 and 4 and chart fixer (old sport)',		'https://www.youtube.com/channel/UCvX1EabtbJ1zPpb7sC5LAMQ',										'444444'],
+			['Haneefs Cre8tions',	'emptyboi',			'Musician for week 1 (have a good day)',						'https://www.youtube.com/channel/UC387XUAmqpdWOGq0a6VTWUA',										'444444'],
+			['Ari',					'emptyboi',			'Third Charter (Only charted Bico, but still our team)',		'https://www.youtube.com/channel/UCSOgusnMu8l1v1Lx-7wdJRQ',										'444444'],
+			['EL1VAT3',				'emptyboi',			'Pixel Artist (he speaks polish tho O_O)',						'',																								'444444'],
+			['Bioxcis-dono',		'emptyboi',			'Helped me with lua scripts bug (THANK YOU SO MUCH :D)',		'https://gamebanana.com/members/2108196',														'444444'],
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',								'https://twitter.com/Shadow_Mario_',	'444444'],
 			['RiverOaken',			'river',			'Main Artist/Animator of Psych Engine',							'https://twitter.com/RiverOaken',		'B42F71'],

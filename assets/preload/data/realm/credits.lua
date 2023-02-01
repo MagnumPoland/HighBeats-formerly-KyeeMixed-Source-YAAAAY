@@ -11,7 +11,7 @@
 	CoderName2 = ''
 	CoderName3 = ''
 
-	ArtistName1 = 'Kizz_'
+	ArtistName1 = 'High'
 	ArtistName2 = ''
 	ArtistName3 = ''
 

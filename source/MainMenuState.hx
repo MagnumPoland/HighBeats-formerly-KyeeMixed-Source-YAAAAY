@@ -199,6 +199,7 @@ class MainMenuState extends MusicBeatState
 	#end
 
 	var selectedSomethin:Bool = false;
+	
 
 	override function update(elapsed:Float)
 	{
@@ -206,6 +207,11 @@ class MainMenuState extends MusicBeatState
 		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
 			if(FreeplayState.vocals != null) FreeplayState.vocals.volume += 0.5 * elapsed;
+		}
+
+		if (FlxG.keys.justPressed.SEVEN)
+		{
+			LoadingState.loadAndSwitchState(new CheatingState()); //WŁĄCZ TO POTEM UŁOMIE
 		}
 
 		var lerpVal:Float = CoolUtil.boundTo(elapsed * 7.5, 0, 1);

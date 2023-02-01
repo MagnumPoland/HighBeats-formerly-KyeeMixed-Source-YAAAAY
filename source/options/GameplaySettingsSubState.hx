@@ -49,12 +49,12 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			false); //Default value
 		addOption(option);
 
-		var option:Option = new Option('Middlescroll',
+		/*var option:Option = new Option('Middlescroll', //nie libię tego, niszczy moje modcharty >:(
 			'If checked, your notes get centered.',
 			'middleScroll',
 			'bool',
 			false);
-		addOption(option);
+		addOption(option);*/
 
 		var option:Option = new Option('Opponent Notes',
 			'If unchecked, opponent notes get hidden.',

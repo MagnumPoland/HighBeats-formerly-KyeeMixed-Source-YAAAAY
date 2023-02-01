@@ -2896,10 +2896,10 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
-		/*if (FlxG.keys.justPressed.SEVEN)
+		if (FlxG.keys.justPressed.SEVEN)
 		{
 			LoadingState.loadAndSwitchState(new CheatingState()); //WŁĄCZ TO POTEM UŁOMIE
-		}*/
+		}
 		
 
 		/*switch (curSong)

@@ -19,7 +19,7 @@
 	MusicianName2 = ''
 	MusicianName3 = ''
 
-	CharterName1 = 'Magnum :)'
+	CharterName1 = 'Pf0r'
 	CharterName2 = ''
 	CharterName3 = '' 
 
