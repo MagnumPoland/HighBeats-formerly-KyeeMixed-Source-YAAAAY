@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="HighBeats_: DEMO 1.0" file="HighBeats" packageName="com.shadowmario.psychengine" package="com.shadowmario.psychengine" main="Main" version="1.0 DEMO DEV" company="HighTEAM" />
+	<app title="HighBeats_: DEMO 1.0" file="HighBeats" packageName="com.shadowmario.psychengine" package="com.shadowmario.psychengine" main="Main" version="1.0 DEMO" company="HighTEAM" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
