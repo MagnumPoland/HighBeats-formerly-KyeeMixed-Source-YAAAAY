@@ -288,7 +288,7 @@ class MainMenuState extends MusicBeatState
                            				PlayState.storyDifficulty = 0;
                            				LoadingState.loadAndSwitchState(new PlayState());*/
 									case 'ost':
-										CoolUtil.browserLoad('https://youtu.be/IpOGdWxv18s?t=476');
+										CoolUtil.browserLoad('https://www.youtube.com/watch?v=P4CcPHSTX0c');
 										LoadingState.loadAndSwitchState(new MainMenuState());
 									case 'gallery':
 										PlayState.SONG = Song.loadFromJson('gallery', 'gallery');

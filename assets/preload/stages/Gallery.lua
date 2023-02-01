@@ -33,7 +33,7 @@ local id = 0
 -- 									<-- SETTINGS, CHANGE SOME OF THE THINGS HERE-->
 
 local bgSettings = {
-	['bgSong'] = "offsetSong", -- Bg Music
+	['bgSong'] = "gallery_music", -- Bg Music
 	['bgVolume'] = 1, -- Bg Music Volume
 	['Scroll Value'] = 0.25, -- Background scroll speed
 	['Bg Alpha Value'] = 0.75, -- Background alpha value (From 1 to 0)
@@ -41,7 +41,7 @@ local bgSettings = {
 local gallerySettings = {
 	['EnablePhotoMode'] = true, -- Will enable Photo Mode to inspect images
 	['Shift View Speed'] = 2, -- Default image moving speed while in Photo Mode
-	['Font'] = 'Strawberry Blossom.ttf', -- Description Font
+	['Font'] = 'bariol.ttf', -- Description Font
 }
 local inputs = { -- 			<< CHANGE PHOTO MODE INPUTS HERE >>
 	['ZoomOutKey'] = "Z",
@@ -65,21 +65,62 @@ function onCreate()
 	-- addArt('name','description','color(HEX)','sizeSelected','sizeNotSelected')
 	-- example:	addArt('pizdec','vanya','FFA500',5,3)
 
-	addArt('Kot','Meow','A9A9A9',5,3)
+	--[[addArt('Kot','Meow','A9A9A9',5,3)
 	addArt('Oxygen','Oxygen','FFA500',5,3)
-	addArt('She','hihihiha','2F4F4F',5,3)
+	addArt('She','hihihiha','2F4F4F',5,3)]]--
+	addArt('zone1',' ','A9A9A9',5,3)
+	addArt('39','Old Title Screen','A9A9A9',5,3)
+	addArt('40','Unused Menu Artwork','A9A9A9',5,3)
+	addArt('41','Unused Pico Stage','A9A9A9',5,3)
+	addArt('38','Oldest (then) Kyee Mixed sprites','A9A9A9',5,3)
+	addArt('37','Beta Kyee GF','A9A9A9',5,3)
+	addArt('36','Old Spookez stage','A9A9A9',5,3)
+	addArt('35','Oldest main menu i can find','A9A9A9',5,3)
+	addArt('34','Oldest Title screen logo (XD)','A9A9A9',5,3)
+	addArt('32','Future content?','A9A9A9',5,3)
+	addArt('29','Concept of new Main Menu','A9A9A9',5,3)
+	addArt('27','Longest fnf song remix soon?','A9A9A9',5,3)
+	addArt('26','Maaaaaybe?','A9A9A9',5,3)
+	addArt('zone2',' ','A9A9A9',5,3)
+	addArt('1','ayyy caramba','A9A9A9',5,3)
+	addArt('2','vs impostor v4 leak!!!!','A9A9A9',5,3)
+	addArt('3',':(','A9A9A9',5,3)
+	addArt('4','Hablas polaco?','A9A9A9',5,3)
+	addArt('5','I like that doggo','A9A9A9',5,3)
+	addArt('7','Genetic domination','A9A9A9',5,3)
+	addArt('8','The','A9A9A9',5,3)
+	addArt('9','Hello chat','A9A9A9',5,3)
+	addArt('10','Szpresien or not?','A9A9A9',5,3)
+	addArt('12','Nooooo :(','A9A9A9',5,3)
+	addArt('11','WHYYYYYY :(','A9A9A9',5,3)
+	addArt('13','Be like them, ok?','A9A9A9',5,3)
+	addArt('14','Bro, what are you doin','A9A9A9',5,3)
+	addArt('15','YEAAH','A9A9A9',5,3)
+	addArt('16','He gonna explode','A9A9A9',5,3)
+	addArt('17','Floppy disk','A9A9A9',5,3)
+	addArt('18','How did he get here','A9A9A9',5,3)
+	addArt('19','Desperation','A9A9A9',5,3)
+	addArt('20','Something for something','A9A9A9',5,3)
+	addArt('21','My blurred cat','A9A9A9',5,3)
+	addArt('22','Kinda true','A9A9A9',5,3)
+	addArt('23','I dont think so','A9A9A9',5,3)
+	addArt('24','Chicken :D Co- :(','A9A9A9',5,3)
+	addArt('25','I just found out this funny comic XD','A9A9A9',5,3)
+	addArt('28','I didnt even know-','A9A9A9',5,3)
+	addArt('30','Oh yeah I love VSC','A9A9A9',5,3)
+	addArt('31','Fax 8)','A9A9A9',5,3)
 
 	length = length - 1;
 
 	-- preload stuff
-	makeLuaSprite('fon', 'menuDesat', 0, 0)
-	makeLuaSprite('fon2', 'menuDesat', 1286, 0)
+	makeLuaSprite('fon', 'gallery/onCreate/coolswagbg', 0, 0)
+	makeLuaSprite('fon2', 'gallery/onCreate/coolswagbg', 1286, 0)
 	makeLuaSprite('bglogo', 'gallery/onCreate/downPart', 0, 500)
-	makeLuaSprite('bglogo2', 'gallery/onCreate/upPart', 0, -500)
+	makeLuaSprite('bglogo2', 'gallery/onCreate/upPart', 0, -1000)
 	makeLuaSprite('bglogo3', 'gallery/onCreate/upPart', 1280, -500)
 	makeLuaSprite('logo', 'gallery/onCreate/logo', 0, 500)
-	makeLuaSprite('RightArrow', 'eventArrow', 1100, 1200)
-	makeLuaSprite('LeftArrow', 'eventArrow', 1000, 1200)
+	makeLuaSprite('RightArrow', 'gallery/onCreate/coolswagarrow', 625, 800)
+	makeLuaSprite('LeftArrow', 'gallery/onCreate/coolswagarrow', 525, 800)
 
 	precacheSound('scrollMenu')
 	precacheSound('cancelMenu')
@@ -130,8 +171,8 @@ function onStartCountdown()
 	addLuaSprite('LeftArrow')
 
 
-	scaleObject('RightArrow', 0.7, 0.7)
-	scaleObject('LeftArrow', 0.7, 0.7)
+	scaleObject('RightArrow', 0.9, 0.9)
+	scaleObject('LeftArrow', 0.9, 0.9)
 	
 	setProperty('LeftArrow.flipX', true)
 	
@@ -150,8 +191,8 @@ function onStartCountdown()
 
 	onChange(0)
 
-	makeLuaText('descriptionText', images[id].description, 640, 320, 0)
-	setTextSize('descriptionText', 100)
+	makeLuaText('descriptionText', images[id].description, 740, 255, 0)
+	setTextSize('descriptionText', 50)
 	addLuaText('descriptionText')
 
 	setTextFont('descriptionText', gallerySettings['Font'])

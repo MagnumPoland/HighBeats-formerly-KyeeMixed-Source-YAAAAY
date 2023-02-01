@@ -1338,20 +1338,20 @@ class PlayState extends MusicBeatState
 				case 'ugh' | 'guns' | 'stress':
 					tankIntro();
 				
-				case 'how-to-play':
+				/*case 'how-to-play':
 					startDialogue(dialogueJson);
 				
 				case 'obeepob':
 					startDialogue(dialogueJson);
 				
 				case 'decomposed':
-					startDialogue(dialogueJson);
+					startDialogue(dialogueJson); //kiedyś to włączę XD
 
 				case 'final-night':
 					startDialogue(dialogueJson);
 
 				case 'bico':
-					startDialogue(dialogueJson);
+					startDialogue(dialogueJson);*/
 
 				//case 'highpai':
 				//	startDialogue(dialogueJson);

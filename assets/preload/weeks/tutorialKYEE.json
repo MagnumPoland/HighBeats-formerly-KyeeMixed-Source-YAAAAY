@@ -1,20 +1,16 @@
 {
-	"storyName": "Your Old Month",
+	"storyName": "Uwu gurl want to do some beep boobs",
 	"difficulties": "mixed",
 	"hideFreeplay": false,
-	"weekBackground": "tutorial_ui",
+	"weekBackground": "stage",
+	"weekBefore": "week1",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
-	"weekBefore": "week1",
 	"startUnlocked": true,
-	"weekCharacters": [
-		"",
-		"",
-		""
-	],
+	"hideStoryMode": false,
 	"songs": [
 		[
 			"how to play",
@@ -26,7 +22,11 @@
 			]
 		]
 	],
-	"hideStoryMode": false,
-	"weekName": "Tutorial Kyee Mixed",
-	"hiddenUntilUnlocked": false
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Tutorial Kyee Mixed"
 }

@@ -2,14 +2,14 @@
 	"storyName": "kingdom boiiiiz",
 	"difficulties": "mixed",
 	"hideFreeplay": false,
-	"weekBackground": "week2_ui",
+	"weekBackground": "halloween",
 	"weekBefore": "week1KYEE",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
-	"startUnlocked": true,
+	"startUnlocked": false,
 	"hideStoryMode": false,
 	"songs": [
 		[
@@ -37,5 +37,5 @@
 		""
 	],
 	"hiddenUntilUnlocked": false,
-	"weekName": "Week 2 Kyee Mixed"
+	"weekName": "Week 2 HighBeats"
 }

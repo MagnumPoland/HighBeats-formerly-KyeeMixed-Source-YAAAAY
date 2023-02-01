@@ -1,14 +1,14 @@
 {
-	"storyName": "idk",
+	"storyName": "Mom with some drip",
 	"difficulties": "Mixed",
 	"hideFreeplay": false,
 	"weekBackground": "limo",
 	"weekBefore": "week3KYEE",
-	"startUnlocked": true,
+	"startUnlocked": false,
 	"weekCharacters": [
-		"mom",
-		"bf",
-		"gf"
+		"",
+		"",
+		""
 	],
 	"songs": [
 		[
@@ -40,5 +40,6 @@
 		]
 	],
 	"hideStoryMode": false,
-	"weekName": "Week 4 Kyee Mixed"
+	"weekName": "Week 4 HighBeats",
+	"hiddenUntilUnlocked": false
 }

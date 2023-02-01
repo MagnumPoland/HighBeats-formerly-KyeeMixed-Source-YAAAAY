@@ -1,15 +1,15 @@
 {
-	"storyName": "kiedys zwykly bambik, dzisiaj skin ze sklepu, gramy w fortnite, nikt sie tu nie nudzi",
+	"storyName": "once a regular Kico, today he is a purple Pico",
 	"difficulties": "Mixed",
 	"hideFreeplay": false,
-	"weekBackground": "week3_ui",
+	"weekBackground": "philly",
 	"weekBefore": "week2KYEE",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
-	"startUnlocked": true,
+	"startUnlocked": false,
 	"hideStoryMode": false,
 	"songs": [
 		[
@@ -46,5 +46,5 @@
 		""
 	],
 	"hiddenUntilUnlocked": false,
-	"weekName": "Week 3 Kyee Mixed"
+	"weekName": "Week 3 HighBeats"
 }

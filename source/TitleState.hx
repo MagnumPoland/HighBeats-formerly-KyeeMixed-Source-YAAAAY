@@ -726,7 +726,7 @@ class TitleState extends MusicBeatState
 					addMoreText('FNF');
 				// credTextShit.visible = true;
 				case 15:
-					addMoreText('Kyee Mixed');
+					addMoreText('HighBeats');
 				// credTextShit.text += '\nNight';
 				case 16:
 					addMoreText('YEAH!'); // credTextShit.text += '\nFunkin';

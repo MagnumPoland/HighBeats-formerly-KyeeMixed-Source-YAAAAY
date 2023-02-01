@@ -7,7 +7,7 @@
 --IF YOU ARE NOT USING CERTAIN NAME SLOTS, JUST LEAVE THEM BLANK 
 	--Example: CodeName1 = ''
 
-	CoderName1 = 'Magnum :)'
+	CoderName1 = 'Adding effects - Magnum :)'
 	CoderName2 = ''
 	CoderName3 = ''
 
@@ -19,7 +19,7 @@
 	MusicianName2 = ''
 	MusicianName3 = ''
 
-	CharterName1 = 'Both diff: Magnum :)'
+	CharterName1 = 'Magnum :)'
 	CharterName2 = ''
 	CharterName3 = '' 
 

@@ -10,24 +10,24 @@ function onEvent(name, value1, value2)
 	if getPropertyFromClass('ClientPrefs', 'camZooms', true) then
 	if name == 'camelliazoom' and value1 == '1' and not lowQuality then --furthest out
 		zooming = true
-		doTweenY('crowdGoingIn', 'crowd_front', 500, value2, 'sineIn')
-		doTweenAlpha('crowd_front', 'crowd_front', 1, value2, 'sineIn')
-		doTweenZoom('gameCameraOUT','camGame', 0.41, value2,'sineIn')
-		doTweenZoom('hudCameraOUT','camHUD', 0.8, value2,'sineIn')
+		doTweenY('crowdGoingIn', 'crowd_front', 500, value2, 'sineOut')
+		doTweenAlpha('crowd_front', 'crowd_front', 1, value2, 'sineOut')
+		doTweenZoom('gameCameraOUT','camGame', 0.8, value2,'sineOut')
+		doTweenZoom('hudCameraOUT','camHUD', 0.7, value2,'sineOut')
 
 	elseif name == 'camelliazoom' and value1 == '2' and not lowQuality then --base zoom
-		doTweenAlpha('crowd_front', 'crowd_front', 0, value2, 'sineOut')
-		doTweenY('crowdGoingOut', 'crowd_front', 1000, value2, 'sineOut')
-		doTweenZoom('gameCameraIN','camGame', 0.59, value2,'sineOut')
-		doTweenZoom('hudCameraIN','camHUD', 1, value2,'sineOut')
+		doTweenAlpha('crowd_front', 'crowd_front', 0, value2, 'sineIn')
+		doTweenY('crowdGoingOut', 'crowd_front', 1000, value2, 'sineIn')
+		doTweenZoom('gameCameraIN','camGame', 1, value2,'sineIn')
+		doTweenZoom('hudCameraIN','camHUD', 1, value2,'sineIn')
 		zooming = false
 
 	elseif name == 'camelliazoom' and value1 == '3' and not lowQuality then --middle
 		zooming = true
-		doTweenY('crowdGoingIn', 'crowd_front', 500, value2, 'sineIn')
-		doTweenAlpha('crowd_front', 'crowd_front', 1, value2, 'sineIn')
-		doTweenZoom('gameCameraOUT','camGame', 0.47, value2,'sineIn')
-		doTweenZoom('hudCameraOUTMID','camHUD', 0.9, value2,'sineIn')
+		doTweenY('crowdGoingIn', 'crowd_front', 500, value2, 'sineOut')
+		doTweenAlpha('crowd_front', 'crowd_front', 1, value2, 'sineOut')
+		doTweenZoom('gameCameraOUT','camGame', 0.9, value2,'sineOut')
+		doTweenZoom('hudCameraOUTMID','camHUD', 0.85, value2,'sineOut')
 	end
 end
 end

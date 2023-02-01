@@ -7,11 +7,11 @@
 --IF YOU ARE NOT USING CERTAIN NAME SLOTS, JUST LEAVE THEM BLANK 
 	--Example: CodeName1 = ''
 
-	CoderName1 = 'Magnum :)'
+	CoderName1 = 'Adding effects - Magnum :)'
 	CoderName2 = 'methewhenmethes - modchart editor'
 	CoderName3 = 'its buggy but whatever'
 
-	ArtistName1 = 'Kizz_'
+	ArtistName1 = 'High'
 	ArtistName2 = ''
 	ArtistName3 = ''
 
