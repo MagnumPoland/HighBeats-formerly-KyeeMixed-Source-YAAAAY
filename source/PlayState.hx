@@ -3070,10 +3070,10 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene) //A TO POTEM WYŁĄCZ!
+		/*if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene) //A TO POTEM WYŁĄCZ!
 		{
 			openChartEditor();
-		}
+		}*/
 
 		// FlxG.watch.addQuick('VOL', vocals.amplitudeLeft);
 		// FlxG.watch.addQuick('VOLRight', vocals.amplitudeRight);
