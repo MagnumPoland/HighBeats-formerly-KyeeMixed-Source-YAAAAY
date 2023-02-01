@@ -673,11 +673,11 @@ class TitleState extends MusicBeatState
 					FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
 				case 2:
-					//#if PSYCH_WATERMARKS
+					#if PSYCH_WATERMARKS
 					createCoolText(['FNF HighBeats by'], 15);
-					//#else
+					#else
 					createCoolText(['High', 'Magnum', 'Pf0r and Haneef', 'El1vat3 and Ari']);
-					//#end
+					#end
 				// credTextShit.visible = true;
 				case 4:
 					#if PSYCH_WATERMARKS
