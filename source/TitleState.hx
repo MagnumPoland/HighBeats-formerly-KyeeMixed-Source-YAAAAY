@@ -676,7 +676,7 @@ class TitleState extends MusicBeatState
 					//#if PSYCH_WATERMARKS
 					createCoolText(['FNF HighBeats by'], 15);
 					//#else
-					createCoolText(['High', 'Magnum', 'Pf0r', 'Haneef', 'El1vat3', 'and Ari']);
+					createCoolText(['High', 'Magnum', 'Pf0r and Haneef', 'El1vat3 and Ari']);
 					//#end
 				// credTextShit.visible = true;
 				case 4:

@@ -1383,7 +1383,7 @@ class PlayState extends MusicBeatState
 	
 		#if desktop
 		// Updating Discord Rich Presence.
-		DiscordClient.changePresence("NO LEAKS!", "I SAID NO LEAKS!");
+		//DiscordClient.changePresence("NO LEAKS!", "I SAID NO LEAKS!");
 		#end
 
 		if(!ClientPrefs.controllerMode)
@@ -2898,7 +2898,7 @@ class PlayState extends MusicBeatState
 	{
 		if (FlxG.keys.justPressed.SEVEN)
 		{
-			LoadingState.loadAndSwitchState(new CheatingState()); //WŁĄCZ TO POTEM UŁOMIE
+			LoadingState.loadAndSwitchState(new CheatingState());
 		}
 		
 
